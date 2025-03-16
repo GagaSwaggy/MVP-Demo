@@ -120,7 +120,6 @@ export default function ReferralPage() {
                     : `$${campaign.rewards.referredDiscount} off your purchase`}
                 </p>
               </div>
-
               <p className="mt-6">
                 Want to earn more rewards? <Link href="/get-referral" className="text-blue-500">Get your own referral link</Link>
               </p>

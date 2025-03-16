@@ -20,7 +20,7 @@ export default function GetReferral() {
       try {
         const response = await fetch('/api/campaigns/active');
         const data = await response.json();
-        
+
         if (data.success) {
           setCampaigns(data.data);
           if (data.data.length > 0) {
@@ -91,7 +91,7 @@ export default function GetReferral() {
       <div className="container mx-auto p-4">
         <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6 mt-10">
           <h1 className="text-2xl font-bold mb-4">Get Your Referral Link</h1>
-          
+
           {campaigns.length === 0 ? (
             <p>No active campaigns available.</p>
           ) : (
@@ -117,11 +117,13 @@ export default function GetReferral() {
                   >
                     Copy Link
                   </button>
-                  
+
                   <p className="mt-4 text-sm">
-                    Share this link with your friends. When they complete the required task,you'll both receive a discount!
+                    Share this link with your friends. When they complete the required task, you&apos;ll both receive a discount!
                   </p>
-                  
+
+
+
                   <button
                     onClick={() => setReferralLink('')}
                     className="mt-4 text-blue-500"
