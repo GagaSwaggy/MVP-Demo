@@ -1,4 +1,5 @@
-import { useState } from 'react';
+"use client"
+import { useState , useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -127,17 +128,6 @@ export default function NewCampaign() {
             ></textarea>
           </div>
 
-          <div className="mb-4">
-            <label className="block mb-2">Task Description</label>
-            <textarea
-              name="task.description"
-              value={formData.task.description}
-              onChange={handleChange}
-              className="w-full p-2 border rounded"
-              rows="2"
-              required
-            ></textarea>
-          </div>
 
           <div className="mb-4">
             <label className="block mb-2">Validation Method</label>
@@ -218,8 +208,7 @@ export default function NewCampaign() {
           </div>
 
           <div className="flex items-center justify-between mt-6">
-            <Link href="/dashboard">
-              <a className="text-blue-500">Cancel</a>
+            <Link href="/dashboard" className="text-blue-500">Cancel
             </Link>
             <button
               type="submit"

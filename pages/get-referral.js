@@ -111,7 +111,7 @@ export default function GetReferral() {
                   <button
                     onClick={() => {
                       navigator.clipboard.writeText(referralLink);
-                      alert('Referral link copied to clipboard!');
+                      alert("Referral link copied to clipboard!");
                     }}
                     className="bg-blue-500 text-white px-3 py-1 rounded text-sm"
                   >
@@ -119,8 +119,7 @@ export default function GetReferral() {
                   </button>
                   
                   <p className="mt-4 text-sm">
-                    Share this link with your friends. When they complete the required task,
-                    you'll both receive a discount!
+                    Share this link with your friends. When they complete the required task,you'll both receive a discount!
                   </p>
                   
                   <button

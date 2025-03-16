@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-
+import Link from 'next/link';
 export default function ReferralPage() {
   const router = useRouter();
   const { code, campaignId } = router.query;
@@ -122,7 +122,7 @@ export default function ReferralPage() {
               </div>
 
               <p className="mt-6">
-                Want to earn more rewards? <a href="/get-referral" className="text-blue-500">Get your own referral link</a>
+                Want to earn more rewards? <Link href="/get-referral" className="text-blue-500">Get your own referral link</Link>
               </p>
             </div>
           ) : (

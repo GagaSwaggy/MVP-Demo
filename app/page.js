@@ -62,9 +62,8 @@ export default function Home() {
 
           <div className={`${isDark ? "bg-gray-800" : "bg-white"} p-6 rounded-lg shadow-md max-w-md`}>
             <h2 className="text-2xl font-bold mb-4">For Users</h2>
-            <p className="mb-6">
-              Refer friends, complete tasks, and earn rewards. It's that simple!
-            </p>
+            <p>Refer friends, complete tasks, and earn rewards. It&apos;s that simple!</p>
+
             <Link href="/get-referral">
               <span className="cursor-pointer bg-purple-500 text-white px-6 py-2 rounded hover:bg-purple-600">
                 Get Referral Link

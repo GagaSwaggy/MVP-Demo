@@ -60,8 +60,7 @@ export default function Dashboard() {
       </div>
 
       <div className="mb-6">
-        <Link href="/campaigns/new">
-          <a className="bg-blue-500 text-white px-4 py-2 rounded">Create New Campaign</a>
+        <Link href="/campaigns/new" className="bg-blue-500 text-white px-4 py-2 rounded">Create New Campaign
         </Link>
       </div>
 
@@ -83,11 +82,9 @@ export default function Dashboard() {
                 <span className="font-medium">Status:</span> {campaign.active ? 'Active' : 'Inactive'}
               </div>
               <div className="flex space-x-2 mt-4">
-                <Link href={`/campaigns/${campaign._id}`}>
-                  <a className="bg-blue-500 text-white px-3 py-1 rounded text-sm">View</a>
+                <Link href={`/campaigns/${campaign._id}`} className="bg-blue-500 text-white px-3 py-1 rounded text-sm">View
                 </Link>
-                <Link href={`/campaigns/${campaign._id}/edit`}>
-                  <a className="bg-green-500 text-white px-3 py-1 rounded text-sm">Edit</a>
+                <Link href={`/campaigns/${campaign._id}/edit`} className="bg-green-500 text-white px-3 py-1 rounded text-sm">Edit
                 </Link>
               </div>
             </div>
